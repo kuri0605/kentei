@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XNW8PQE76G"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XNW8PQE76G');
+  </script>
+<meta charset="utf-8">　<!--文字化け防止-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewpoint" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="imostyle.css" />
+<script src="imoscript.js"></script>
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'qyz7fim',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+<title>さつまいも検定</title>
+</head>
+<body>
+
+  <div class="container">
+<header class="header">
+  <img src="image/header2.png" alt="logo">
+</header>
+<div class="page" id="sentaku">
+<p class="levelsetumei">
+難易度を選択
+</p>
+<div class="level">
+<label style="display:block"><!--縦に並べる-->
+<button class="btn1" onclick="startQuiz(0)"><img src="image/shokyuu.png" alt="初級" class="shokyuubutton"></button>
+</label>
+<label style="display:block">
+<button class="btn2" onclick="startQuiz(1)"><img src="image/chuukyuu.png" alt="中級" class="chuukyuubutton"></button>
+</label>
+<label style="display:block">
+<button class="btn3" onclick="startQuiz(2)"><img src="image/joukyuu.png" alt="上級" class="joukyuubutton"></button>
+</label>
+</div>
+</div>
+
+<div class="page" id="mondai" style="display:none;">
+<p class="mondaimoji">問題
+</p>
+<p id="toi" class="toimoji"></p>
+<p>
+<form id="quiz">
+ <div class="sentakusi">
+  <label style="display:block">
+  <input name="answer" id="quiz1" type="radio" value="1" class="checkbox1"></input>
+  </label>
+  <label style="display:block">
+  <input name="answer" id="quiz2" type="radio" value="2" class="checkbox2"></input>
+  </label>
+  <label style="display:block">
+  <input name="answer" id="quiz3" type="radio" value="3" class="checkbox3"></input>
+  </label>
+  <label style="display:block">
+  <input name="answer" id="quiz4" type="radio" value="4" class="checkbox4"></input>
+  </label>
+ </div>
+</form>
+<button class="btn4" onclick="judgeQuiz()"><img src="image/kaitoumoji.png" alt="回答する" class="kaitoumoji">
+</button>
+</p>
+</div>
+
+<div class="page" id="kaitou" style="display:none;">
+<p><img src="image/kotaeawase.png" alt="" class="kotaeawase">
+</p>
+<p id="kotae" class="kotaemoji"></p>
+<p id="kaisetu" class="kaisetumoji"></p>
+<p>
+<button class="btn5" onclick="nextQuiz()"><img src="image/nextbutton.png" alt="次へ" class="nextbutton">
+</button>
+</p>
+</div>
+
+<div class="page" id="owari" style="display:none;">
+
+<p id="kekka" class="kekkamoji"></p>
+<p id="ten" class="tenmoji"></p>
+<p id="stat" class="statmoji"></p>
+<p id="gouhi" class="gohimoji"></p>
+<button class="btn6" onclick="location.reload()"><img src="image/retrybutton.png" alt="もう一度" class="retrybutton"></button>
+</div>
+<!--
+<section class="yuudou">
+  <img src="image/yuudou.png" alt="">
+</section>
+-->
+<footer class="footer">
+  <img src="image/footer.png" alt="footerimage">
+</footer>
+</div>
+
+</body>
+</html>

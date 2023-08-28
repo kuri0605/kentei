@@ -1,0 +1,292 @@
+@charset "UTF-8";
+body {
+  font-family: serif;
+  text-align: center;
+  background-image: url(image/back.png);
+  background-size: 100%;
+}
+*:focus{
+  outline: none;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+}
+a{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);/*クリック時の青いもやをけす*/
+}
+.header{
+  margin-bottom: 50px;
+}
+.header img{
+  width: 100%;
+}
+
+.page {
+  width: 700px;
+  margin: 50px auto;
+}
+
+.levelsetumei{
+  font-size: 40px;
+  font-family: vdl-logog, sans-serif;
+font-weight: 400;
+font-style: normal;
+  margin-bottom: 50px;
+  margin-top: 100px;
+}
+
+.level{
+  margin-top: 50px;
+  line-height: 50px;
+}
+
+.btn1 {
+  width:auto;
+  padding:0;
+  margin:0;
+  background: none;
+  border: 0;
+  font-size: 0;
+  line-height: 0
+  overflow: visible;
+  cursor:pointer;
+  margin-top: 20px;
+}
+
+.btn2 {
+  width:auto;
+  padding:0;
+  margin:0;
+  background: none;
+  border: 0;
+  font-size: 0;
+  line-height: 0
+  overflow:visible;
+  cursor:pointer;
+  margin-top: 20px;　
+}
+
+.btn3 {
+  width:auto;
+  padding:0;
+  margin:0;
+  background: none;
+  border: 0;
+  font-size: 0;
+  line-height: 0
+  overflow:visible;
+  cursor:pointer;
+  margin-top: 20px;  　
+}
+
+.shokyuubutton{
+    width: 80%;/*floatしてる要素にはmaxwidthが効かないため、width=100%を追記する*/
+  　max-width: 30%;
+}
+
+.chuukyuubutton{
+    width: 80%;
+  　max-width: 30%;
+  margin-top: 40px;
+}
+
+.joukyuubutton{
+    width: 80%;
+  　max-width: 30%;
+    margin-top: 40px;
+}
+
+.btn4 {
+  width:auto;
+  padding:0;
+  margin:0;
+  background: none;
+  border: 0;
+  font-size: 0;
+  line-height: 0
+  overflow:visible;
+  cursor:pointer;
+  margin-top: 20px;
+}
+
+.btn5 {
+  width:auto;
+  padding:0;
+  margin:0;
+  background: none;
+  border: 0;
+  font-size: 0;
+  line-height: 0
+  overflow:visible;
+  cursor:pointer;
+  margin-top: 100px;
+}
+
+.btn6 {
+  width:auto;
+  padding:0;
+  margin:0;
+  background: none;
+  border: 0;
+  font-size: 0;
+  line-height: 0
+  overflow:visible;
+  cursor:pointer;
+  margin-top: 50px;
+}
+
+.toimoji{
+  margin-top: 20px;
+  font-family: vdl-logog, sans-serif;
+font-weight: 400;
+font-style: normal;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.sentakusi{
+  font-family: vdl-logog, sans-serif;
+font-weight: 400;
+font-style: normal;
+  line-height: 50px;
+  font-size: 40px;
+  text-align: center;
+  line-height: 80px;
+}
+
+.kaitoumoji{
+  max-width: 30%;
+  margin-top: 100px;
+}
+
+.mondaimoji{
+  text-align: center;
+  font-size: 60px;
+  font-family: vdl-logog, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.kotaeawase{
+  max-width:50%;
+}
+
+.kotaemoji{
+  margin-top: 10px;
+  font-size: 60px;
+  font-weight: bold;
+  font-family: vdl-logog, sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+.checkbox1{
+  transform: scale(3);
+  margin: 0 20px 0 0;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.checkbox2{
+  transform: scale(3);
+  margin: 0 20px 0 0;
+  text-align: left;
+  vertical-align: middle;
+
+}
+
+.checkbox3{
+  transform: scale(3);
+  margin: 0 20px 0 0;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.checkbox4{
+  transform: scale(3);
+  margin: 0 20px 0 0;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.kaisetumoji{
+  font-size: 30px;
+  font-family: vdl-logog, sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+.kekkamoji{
+  font-size: 75px;
+  font-weight: bold;
+  font-family: vdl-logog, sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+.gohimoji{
+  font-size: 30px;
+  font-weight: bold;
+  font-family: vdl-logog, sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+.tenmoji{
+  font-size: 45px;
+  font-family: vdl-logog, sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+.statmoji{
+  font-size: 50px;
+  font-weight: bold;
+  font-family: vdl-logog, sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+.nextbutton{
+  max-width:30%;
+}
+
+.retrybutton{
+    max-width:30%;
+}
+
+.container{
+  display: flex;/*フッターを下に固定*/
+  flex-direction:column; /*フッターを下に固定*/
+  position:relative;/*フッターを下に固定*/
+  padding-bottom: 0px;/*フッターを下に固定*/
+  box-sizing: boder-box;/*フッターを下に固定*/
+  min-height:100vh;/*フッターを下に固定*/
+}
+
+.yuudou{
+  text-align: center;
+}
+.yuudou img{
+  max-width: 40%;
+}
+.footer img{
+  width:100%;
+}
+
+.footer{
+  margin-top:auto;/*フッターを下に固定*/
+  padding: 10px 0;
+}
+
+#stat{
+  background-image: url(image/statbg.png);
+  background-size: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.statmoji{
+  color: #fff;
+}
